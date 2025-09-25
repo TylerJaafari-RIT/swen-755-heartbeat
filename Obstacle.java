@@ -1,4 +1,4 @@
-public enum ObstacleType {
+enum ObstacleType {
 	PEDESTRIAN,
 	VEHICLE,
 	ANIMAL,

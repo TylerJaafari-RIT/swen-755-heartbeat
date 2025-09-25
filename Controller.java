@@ -9,8 +9,13 @@ public class Controller {
     public static void main(String [] args) { 
         Heartbeat heart = new Heartbeat();
         Monitor monitor = new Monitor(); 
-        while (true) { 
-            Controller.Receiver(monitor.checksHeart(heart));            
+        Detector detector = new Detector();
+        ObstacleSpawner spawner = new ObstacleSpawner();
+        int count = 0;
+        while (count != 100) { 
+            Controller.Receiver(monitor.checksHeart(heart));
+            spawner.flood(detector);
+            count = count+2;
         }
 
     }
