@@ -8,8 +8,8 @@ public enum ObstacleType {
 
 public class Obstacle {
 	private ObstacleType type;
-	private double distance;
-	private double size; // in approximate square feet. Used to gauge
+	private double distance; // in feet
+	private double size; // in approximate square feet.
 
 	public ObstacleType getType() {	return type; }
 	public double getDistance() { return distance; }
