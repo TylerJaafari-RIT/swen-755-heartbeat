@@ -1,11 +1,3 @@
-public enum ObstacleType {
-	PEDESTRIAN,
-	VEHICLE,
-	ANIMAL,
-	TRAFFIC_CONE,
-	DEBRIS
-}
-
 public class Obstacle {
 	private ObstacleType type;
 	private double distance; // in feet
