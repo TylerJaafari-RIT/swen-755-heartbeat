@@ -11,11 +11,9 @@ public class Controller {
         Monitor monitor = new Monitor(); 
         Detector detector = new Detector();
         ObstacleSpawner spawner = new ObstacleSpawner();
-        int count = 0;
-        while (count != 100) { 
+        while (true) { 
             Controller.Receiver(monitor.checksHeart(heart));
             spawner.flood(detector);
-            count = count+2;
         }
 
     }
