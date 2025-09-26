@@ -5,8 +5,8 @@ public class ObstacleSpawner {
 		Random rng = new Random();
 
 		ObstacleType t = ObstacleType.values()[rng.nextInt(ObstacleType.values().length)];
-		double distance = rng.nextDouble(1000);
-		double size = rng.nextDouble(10);
+		double distance = rng.nextDouble() * 1000;
+		double size = rng.nextDouble() * 10;
 
 		return new Obstacle(t, distance, size);
 	}

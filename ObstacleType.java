@@ -1,0 +1,7 @@
+public enum ObstacleType {
+	PEDESTRIAN,
+	VEHICLE,
+	ANIMAL,
+	TRAFFIC_CONE,
+	DEBRIS
+}
